@@ -1,0 +1,109 @@
+:root {
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+}
+.top-panel-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+    height: 7vh;
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+    background-color: #f1f1f1;
+}
+.search-container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.search-bar{
+    height: 4vh;
+    min-width: 20vw;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background-color: #f9f9f9;
+    font-size: 0.95rem;
+}
+.search-bar:focus {
+    background-color: #ffffff;
+}
+.search-button {
+    height: 4vh;
+    min-width: 4vw;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #f4bb00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-button:hover {
+    background-color: #e0a800;
+}
+
+.dropdown {
+    position: relative;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    background-color: #f1f1f1;
+    transition: box-shadow 0.3s ease;
+}
+.dropdown select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 0 1rem;
+    background-color: transparent;
+    font-size: 0.95rem;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.dropdown::after {
+    content: '▾';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #555;
+}
+.dropdown:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown select:focus {
+    background-color: #fff;
+}
+.btn{
+    height: 4vh;
+    width: 10vw;
+    border: none;
+    background-color: #4D1414;
+    color: #F4BB00;
+    border-radius: 20px;
+    transition: 0.5s;
+}

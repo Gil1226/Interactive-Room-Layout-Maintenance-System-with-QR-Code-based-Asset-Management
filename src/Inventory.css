@@ -1,0 +1,215 @@
+.middle-panel{
+    height: 86vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.label-container {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    padding: 0 1vw;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    list-style: none;
+}
+.label-container li {
+    white-space: nowrap;          
+    overflow: hidden;            
+    text-overflow: ellipsis;     
+    padding: 0 0.5vw;             
+}
+.label-container li:nth-child(1){
+    min-width: 5vw;
+    text-align: center;
+}
+.label-container li:nth-child(2) {
+    width: 15vw;
+    text-align: left;
+    overflow: hidden;
+}
+.label-container li:nth-child(3) {
+    min-width: 10vw;
+    text-align: left;
+}
+.label-container li:nth-child(4) {
+    min-width: 10vw;
+    text-align: left;
+}
+.label-container li:nth-child(5),
+.label-container li:nth-child(6),
+.label-container li:nth-child(7){
+    min-width: 10vw;
+    text-align: center;
+}
+.label-container li:nth-child(8){
+    min-width: 8vw;
+    text-align: center;
+}
+#item-container{
+    margin-top: 0.2vh;
+    margin-bottom: 0.2vh;
+    height: 3vh;
+}
+
+.bottom-panel{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.bottom-panel button{
+    margin-right: 1vw;
+    width: 8vw;
+    height: 3vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.17);
+    background-color: #f1f1f1;
+    transition: box-shadow 0.3s ease;
+    transition: background-color 0.6s ease;
+    border: none;
+    border-radius: 25px;
+}
+.bottom-panel button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f4bb00;
+}
+
+
+.detailed-info-container{
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(59, 59, 59, 0.7);
+}
+.show-detailed-info {
+  width: 90%;
+  margin-left: 5%;
+  border-collapse: collapse;
+  margin-top: 10%;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.show-detailed-info th,
+.show-detailed-info td, .show-detailed-info input{
+  padding: 12px 16px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+  width: 100%;
+}
+.show-detailed-info caption{
+    font-size: 1000;
+    font-size: 3vh;
+    background-color: #4d1414;
+    color: #f4bb00;
+    height: 5vh;
+    padding: 1vh;
+}
+.show-detailed-info th {
+  background-color: #4d1414;
+  color: #ffffff;
+  font-weight: bold;
+  width: 20%;
+}
+
+.show-detailed-info tr:nth-child(even) td {
+  background-color: #f1f3f5;
+}
+
+.show-detailed-info tr:hover td {
+  background-color: #e9ecef;
+}
+
+.detailed-option-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #4d1414;
+}
+.detailed-option-container p{
+    margin-right: 2vw;
+    cursor: default;
+    color: white;
+}
+.edit-button{
+    text-decoration: underline;
+    color: #f4bb00;
+    display: block;
+}
+.save-button{
+    display: none;
+}
+.highlight{
+    background-color: rgb(244, 187, 0);
+}
+
+.add-item-table{
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(59, 59, 59, 0.7);
+    display: none;
+}
+.add-item-info{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.add-item-info th,
+.add-item-info td, 
+.add-item-info input{
+    padding: 12px 16px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    width: 100%;
+}
+.add-item-info th {
+    background-color: #4d1414;
+    color: #ffffff;
+    font-weight: bold;
+    width: 20%;
+}
+.add-item-info caption{
+    font-size: 1000;
+    font-size: 3vh;
+    background-color: #4d1414;
+    color: #f4bb00;
+    height: 5vh;
+    padding: 1vh;
+}
+.add-option-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #4d1414;
+}
+.cancel-button{
+    margin-right: 2vw;
+    cursor: default;
+    color: white;
+}
+.add-button{
+    margin-right: 2vw;
+    cursor: default;
+    text-decoration: underline;
+    color: #f4bb00;
+}
+
+
+

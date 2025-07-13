@@ -1,0 +1,77 @@
+.generateQr-panel-container{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-info-container{
+    height: 60vh;
+    width: 25vw;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    
+}
+.input-group{
+    position: relative;
+}
+.input-group input{
+    height: 3vh;
+    width: 20vw;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 3vh;
+    outline: none;
+    background-color: transparent;
+}
+
+.placeholder{
+    position: absolute;
+    left: 10px;
+    font-size: 1.5vh;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+input:valid + .placeholder,
+.input-group input:focus + .placeholder{
+    transform: translateY(-2vh);
+}
+
+.input-info-container button{
+    height: 4vh;
+    width: 10vw;
+    border: none;
+    background-color: #4D1414;
+    color: #F4BB00;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.input-info-container button:hover{
+    background-color: #702020;
+}
+.qrCode{
+    height: 60vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+.qrCode div{
+   border: 1px solid;
+   height: 45vh;
+   width: 15vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+.qrCode p{
+    align-self: flex-end;
+    font-weight: bolder;
+}

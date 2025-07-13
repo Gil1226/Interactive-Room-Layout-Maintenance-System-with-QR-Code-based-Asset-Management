@@ -1,0 +1,38 @@
+.left-panel-container{
+    background-color: #4d1414;
+    color: white;
+    height: 100vh;
+    width: 20vw;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+.info-container{
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+    padding: 0px 20px;
+    
+}
+.nav-option-container p{ 
+    height: 2.3vw;
+    width: 14vw;
+    border-bottom: 1px solid white ;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.logout-container p{
+    height: 2.3vw;
+    width: 14vw;
+    border-bottom: 1px solid white ;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+/*f4bboo*/
+.nav-option-container p:hover, .logout-container p:hover{
+    color: #f4bb00;
+    border-bottom: 1px solid #f4bb00;
+}
